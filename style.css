@@ -1,0 +1,79 @@
+:root{
+    font-family: Raleway, Helvetica, sans-serif;
+    --main-font: 2rem;
+    --paragraph-font: 1rem;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem 1rem;
+}
+
+.header{
+    font-size: var(--main-font);
+}
+
+.user-input{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: flex-start;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    margin-top: 40px;
+    width: 20%;
+    font-size: 18px;
+}
+
+input[type='text'],
+input[type='number'],
+select{
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 100%;
+    padding: 7px;
+    font-size: 18px;
+    margin-top: 7px;
+}
+
+button {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #5995DA;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 40px;
+    cursor: pointer;
+    margin: 20px 5px;
+}
+
+.library{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    
+    width: 80%;
+    margin-top: 20px;
+}
+
+.book{
+    border: 10px solid rgb(181, 184, 234);
+    background-color: white;
+    border-radius: 15px;
+    padding: 7px 15px;
+}
+
+.remove{
+    background-color: lightcoral;
+}
